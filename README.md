@@ -68,12 +68,12 @@
 - `$ ember g controller todos`
   * Create main action here `createTodo()`
     * Create Ember record
-```javascript
-let todo = this.store.createRecord('todo', {
-  task: newTask,
-  isComplete: false
-});
-```
+    ```javascript
+    let todo = this.store.createRecord('todo', {
+      task: newTask,
+      isComplete: false
+    });
+    ```
     * Save record => Set up post request return in Mirage.
   * Pass action down to the component level (**COMPONENT NO LONGER NEEDS TO DEFINE ACTIONS!**)
 
