@@ -1,0 +1,9 @@
+<h3>{{openTasks}} Remaining Tasks</h3>
+
+<ul class="todolist">
+  {{#each todos as |todoitem|}}
+    {{todo-item todo=todoitem}}
+  {{/each}}
+</ul>
+
+{{input type="text" placeholder="What needs to be done?" value=newTask action="createTodo"}}

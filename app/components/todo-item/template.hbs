@@ -1,0 +1,4 @@
+<li class="todo-item">
+  {{input type="checkbox" checked=todo.isComplete class="toggle"}}
+  <a {{action 'toggleTodo'}} class="{{if todo.isComplete "complete"}}">{{todo.task}}</a>
+</li>
