@@ -67,6 +67,8 @@
   * Add action to `<a>` element to toggle completion property
 - `$ ember g controller todos`
   * Create main action here `createTodo()`
+    * Component will just call its super `this.attrs.createTodo();`
+      * Component template will set the closure action `{{todo-list todos=model createTodo=(action 'createTodo')}}`
     * Create Ember record
     ```javascript
     let todo = this.store.createRecord('todo', {
